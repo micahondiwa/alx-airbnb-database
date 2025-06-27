@@ -77,6 +77,7 @@
 
 **Indexing**
 - Primary Keys: Indexed automatically.
+
     *Additional Indexes:*
         - email in the User table.
         - property_id in the Property and Booking tables.
