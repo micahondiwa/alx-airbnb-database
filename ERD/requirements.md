@@ -83,6 +83,7 @@
         - booking_id in the Booking and Payment tables.
 
 ER Diagram:
+
 ![alt text](AirBnB_ER.jpg)
 
 Source: https://drive.google.com/file/d/1Y-IQGVCc1SAegTfsZJELIkR724hBxOlU/view?usp=sharing
