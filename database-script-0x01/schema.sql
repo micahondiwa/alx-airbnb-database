@@ -30,3 +30,12 @@ CREATE TABLE Booking(
     status,
     created_at,
 );
+
+CREATE TABLE Payment(
+    payment_id,
+    booking_id,
+    amount,
+    payment_date,
+    payment_method
+);
+
