@@ -47,3 +47,11 @@ CREATE TABLE Review(
     comment,
     created_at
 );
+
+CREATE TABLE Message(
+    message_id,
+    sender_id,
+    recipient_id,
+    message_body,
+    sent_at,
+);
