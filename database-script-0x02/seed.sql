@@ -1,1 +1,2 @@
-s
+INSERT INTO User (user_id, first_name, last_name, email, password_hash, phone_number, role, created_at)
+VALUES (123, "FirstName", "LastName", "email@example.com", "password", "+299999999", "admin", 2345hs)
