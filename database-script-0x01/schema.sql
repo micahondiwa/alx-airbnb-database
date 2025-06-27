@@ -48,12 +48,15 @@ CREATE TABLE Payment(
 );
 
 CREATE TABLE Review(
-    review_id,
-    property_id,
-    user_id,
-    rating,
-    comment,
-    created_at
+    review_id UUID PRIMARY KEY,
+    property_id UUID NOT NULL,
+    user_id UUID NOT NULL,
+    rating INTEGER NOT NULL CHECK (rating >= 1 AND rating <=  5),
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (property_id) REFERENCES Property(property_id) ON DELETE CASECADE,
+    FOREIGN KEY (user_id) REFERENCES User(user_id) ON DELETE CASECADE,
+    INDEX (property_id)
 );
 
 CREATE TABLE Message(
