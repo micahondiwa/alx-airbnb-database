@@ -8,3 +8,14 @@ CREATE TABLE User (
     role,
     created_at,
 );
+
+CREATE TABLE Property (
+    property_id,
+    host_id user_id,
+    name varchar(),
+    description,
+    location varchar(),
+    pricepernight,
+    created_at,
+    updated_at,
+);
