@@ -38,11 +38,13 @@ CREATE TABLE Booking(
 );
 
 CREATE TABLE Payment(
-    payment_id,
-    booking_id,
-    amount,
-    payment_date,
-    payment_method
+    payment_id UUID PRIMARY KEY,
+    booking_id UUID NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    payment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    payment_method ENUM('credit_card', 'paypal', 'stripe'),
+    FOREIGN KEY (booking_id) REFERENCES Booking(booking_id) ON DELETE CASECADE,
+    INDEX (booking_id)
 );
 
 CREATE TABLE Review(
