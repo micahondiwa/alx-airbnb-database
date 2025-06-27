@@ -19,3 +19,14 @@ CREATE TABLE Property (
     created_at,
     updated_at,
 );
+
+CREATE TABLE Booking(
+    booking_id,
+    property_id,
+    user_id,
+    start_date,
+    end_date,
+    total_price,
+    status,
+    created_at,
+);
