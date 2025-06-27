@@ -19,18 +19,22 @@ CREATE TABLE Property (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (host_id) REFERENCES User(user_id) ON DELETE CASECADE,
-    INDEX(property_id)
+    INDEX (property_id)
 );
 
 CREATE TABLE Booking(
-    booking_id,
-    property_id,
-    user_id,
-    start_date,
-    end_date,
-    total_price,
-    status,
-    created_at,
+    booking_id UUID PRIMARY KEY,
+    property_id UUID NOT NULL,
+    user_id UUID NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    status ENUM('pending', 'confirmed', 'canceled') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (property_id) REFERENCES Property(property_id) ON DELETE CASECADE,
+    FOREIGN KEY (user_id) REFERENCES User(user_id) ON DELETE CASECADE,
+    INDEX (property_id),
+    INDEX (booking_id)
 );
 
 CREATE TABLE Payment(
