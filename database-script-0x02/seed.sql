@@ -30,3 +30,9 @@ INSERT INTO Review (review_id, property_id, user_id, rating, comment)
 VALUES
   ('r7000000-r700-r700-r700-r70000000000', 'p1000000-p100-p100-p100-p10000000000', 'a3333333-a333-a333-a333-a33333333333', 5, 'Absolutely loved the villa! Clean and relaxing.'),
   ('r8000000-r800-r800-r800-r80000000000', 'p2000000-p200-p200-p200-p20000000000', 'a3333333-a333-a333-a333-a33333333333', 4, 'Great stay, but the WiFi was slow.');
+
+-- Message
+INSERT INTO Message (message_id, sender_id, recipient_id, message_body)
+VALUES
+  ('m9000000-m900-m900-m900-m90000000000', 'a3333333-a333-a333-a333-a33333333333', 'b1111111-b111-b111-b111-b11111111111', 'Hi Bob, is the villa available in August?'),
+  ('m9100000-m910-m910-m910-m91000000000', 'b1111111-b111-b111-b111-b11111111111', 'a3333333-a333-a333-a333-a33333333333', 'Hi Alice, yes it is! Let me know your dates.');
