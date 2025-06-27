@@ -1,12 +1,12 @@
 CREATE TABLE User (
-    user_id,
-    first_name varchar(),
-    last_name varchar(),
-    email varchar(),
-    password_hash varchar(),
-    phone_number varchar(),
-    role,
-    created_at,
+    user_id UUID PRIMARY KEY,
+    first_name varchar(255) NOT NULL,
+    last_name varchar(255) NOT NULL,
+    email varchar(255) NOT NULL UNIQUE,
+    password_hash varchar(255) NOT NULL,
+    phone_number varchar(20),
+    role ENUM('guest', 'host', 'admin') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 );
 
 CREATE TABLE Property (
