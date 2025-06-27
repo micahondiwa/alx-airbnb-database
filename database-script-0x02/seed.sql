@@ -24,3 +24,9 @@ INSERT INTO Payment (payment_id, booking_id, amount, payment_method)
 VALUES
   ('pay5000000-pay5-pay5-pay5-pay50000000000', 'b3000000-b300-b300-b300-b30000000000', 1400.00, 'credit_card'),
   ('pay6000000-pay6-pay6-pay6-pay60000000000', 'b4000000-b400-b400-b400-b40000000000', 660.00, 'paypal');
+
+-- Review 
+INSERT INTO Review (review_id, property_id, user_id, rating, comment)
+VALUES
+  ('r7000000-r700-r700-r700-r70000000000', 'p1000000-p100-p100-p100-p10000000000', 'a3333333-a333-a333-a333-a33333333333', 5, 'Absolutely loved the villa! Clean and relaxing.'),
+  ('r8000000-r800-r800-r800-r80000000000', 'p2000000-p200-p200-p200-p20000000000', 'a3333333-a333-a333-a333-a33333333333', 4, 'Great stay, but the WiFi was slow.');
