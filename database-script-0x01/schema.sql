@@ -39,3 +39,11 @@ CREATE TABLE Payment(
     payment_method
 );
 
+CREATE TABLE Review(
+    review_id,
+    property_id,
+    user_id,
+    rating,
+    comment,
+    created_at
+);
