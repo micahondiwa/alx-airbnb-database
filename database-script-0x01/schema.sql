@@ -10,14 +10,16 @@ CREATE TABLE User (
 );
 
 CREATE TABLE Property (
-    property_id,
-    host_id user_id,
-    name varchar(),
-    description,
-    location varchar(),
-    pricepernight,
-    created_at,
-    updated_at,
+    property_id UUID PRIMARY KEY,
+    host_id user_id NOT NULL,
+    name varchar(255) NOT NULL,
+    description TEXT NOT NULL,
+    location varchar(255) NOT NULL,
+    pricepernight DECIMAL(10, 2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (host_id) REFERENCES User(user_id) ON DELETE CASECADE,
+    INDEX(property_id)
 );
 
 CREATE TABLE Booking(
