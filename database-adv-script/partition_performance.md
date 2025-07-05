@@ -1,6 +1,6 @@
-# partition_performance.mdcode
+# Partitioning Performance
 
-EXPLAIN ANALYZE
-SELECT *
-FROM Booking
-WHERE start_date >= '2023-07-01' AND start_date < '2023-10-01';
+**Steps**
+- Converted Booking into a partitioned table using PostgreSQL range partitioning by quarter.
+- Populated child tables covering the year 2023.
+- Verified functionality with date-based queries using EXPLAIN ANALYZE.
