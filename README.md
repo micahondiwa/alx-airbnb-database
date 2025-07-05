@@ -10,3 +10,5 @@ This project is part of the comprehensive ALX Airbnb Database Module, focusing o
 - Write and execute SQL DML scripts to seed databases with realistic sample data, simulating real-world scenarios.
 - Enhance collaboration skills by managing repositories, documenting processes, and adhering to professional submission standards.
 
+**Key Highlights**
+- 1. **Defining Relationships with ER diagrams** - Creating an ER diagram, modeling relationships and dependencies between users, bookings, properties, and reviews in the Airbnb schema.
