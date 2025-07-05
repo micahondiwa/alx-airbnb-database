@@ -12,7 +12,7 @@ IN(
     HAVING AVG(rating) > 4.0
 );
 
--- 
+-- A correlaed subquery to find all users who have made more than 3 bookings
 SELECT 
     *
 FROM 
