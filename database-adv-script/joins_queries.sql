@@ -1,6 +1,6 @@
-SELECT * 
-FROM BOOKING 
-INNER JOIN USER ON Booking.BookingID=User.UserID
+SELECT Booking *, User *
+FROM Booking
+INNER JOIN User ON Booking.UserID=User.UserID
 
 
 SELECT * 
