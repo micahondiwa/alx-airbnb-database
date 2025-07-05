@@ -4,10 +4,10 @@ INNER JOIN USER| ON Booking.BookingID=User.UserID
 
 
 SELECT * 
-FROM Review
-LEFT JOIN Property ON Review.ReviewID=Property.PropertyID
+FROM Property
+LEFT JOIN Review ON Property.PropertyID=Review.ReviewID
 
 
-SELCT *
+SELECT *
 FROM Booking
 FULL OUTER JOIN User ON Booking.BookingID=USER.UserID
