@@ -14,3 +14,4 @@ This project is part of the comprehensive ALX Airbnb Database Module, focusing o
 - 1. **Defining Relationships with ER diagrams** - Creating an ER diagram, modeling relationships and dependencies between users, bookings, properties, and reviews in the Airbnb schema.
 - 2. **Complex Queries with Joins** - Combining multiple tables to extract meaningful insights. Explores INNER JOIN, LEFT JOIN, and FULL OUTER JOIN.
 - 3. **Power Subqueries** - Correlated and non-correlated subqueries. Nesting queries for advanced data analysis, such as calculating average ratings or filering users based on activity threshold.
+- 4. **Aggregations and Window Functions** - Using SQL aggregation functions like COUNT and SUM and avanced window functions like ROW_NUMBER and RANK to rank and analyze data sets. 
