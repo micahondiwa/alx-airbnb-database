@@ -31,6 +31,8 @@ FROM Booking b
 JOIN User u on b.user_id = u.user_id
 JOIN Property p on b.property_id=p.property_id
 LEFT JOIN Payment pay on b.booking_id=pay.booking_id;
+WHERE b.status='Confirmed'
+    AND b.start_date>=CURRENT_DATE - INTERVAL '1 year';
 
 -- Analyze performance
 EXPLAIN
