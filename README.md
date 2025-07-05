@@ -16,4 +16,5 @@ This project is part of the comprehensive ALX Airbnb Database Module, focusing o
 - 3. **Power Subqueries** - Correlated and non-correlated subqueries. Nesting queries for advanced data analysis, such as calculating average ratings or filering users based on activity threshold.
 - 4. **Aggregations and Window Functions** - Using SQL aggregation functions like COUNT and SUM and avanced window functions like ROW_NUMBER and RANK to rank and analyze data sets. 
 - 5. **Indexing for Optmization** - Indentifying performance bottlenecks and writing SQL commands to create indexes for frequently queried columns. 
-- 
+- 6. **Query Optimization Techniques** - Writing and analyzing complex queries for retrieving detailed information about booking s, properties, users, and payments. Refactoring queries to improve execution times by reducing redundancies and leveraging indexing.
+- 7. **Partitioning Large Tables** - Addressing 
