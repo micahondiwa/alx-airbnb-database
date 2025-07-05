@@ -22,6 +22,11 @@ ORDER BY
 ASC;
 
 -- A query using FULL OUTER JOIN to retrieve all users and bookings, even if user has no booking or a booking is not linked to a user.
-SELECT Users.*, Booking.*
-FROM Users
-FULL OUTER JOIN Booking ON Users.User_id = Booking.User_id;
+SELECT 
+    Users.*, Booking.*
+FROM 
+    Users
+FULL OUTER JOIN 
+    Booking 
+ON 
+    Users.User_id = Booking.User_id;
