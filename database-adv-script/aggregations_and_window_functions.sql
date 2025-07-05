@@ -1,1 +1,4 @@
-aggregations_and_window_functions.sql
+SELECT User_id
+COUNT(*) AS total_bookings
+FROM Booking
+GROUP By User_id;
