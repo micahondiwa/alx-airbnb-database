@@ -30,3 +30,7 @@ EXPLAIN SELECT *
 FROM Booking
 WHERE user_id =123;
 ```
+
+**Expectations**:
+- Faster execution of the queries with index seek instead of full table scan
+- Reduced I/O as the database can now use index to access relevant rows more quickly.
