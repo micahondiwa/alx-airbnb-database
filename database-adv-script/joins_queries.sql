@@ -1,3 +1,4 @@
+--A query using IINER JOIN to retrieve all bookings and the respective users who made those bookings
 SELECT Booking.*, User.*
 FROM Booking
 INNER JOIN Users ON Booking.User_id = Users.User_id;
