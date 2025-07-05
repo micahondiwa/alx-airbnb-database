@@ -41,3 +41,11 @@ FROM Booking b
 JOIN User u on b.user_id=user_id
 JOIN Property p ON b.property_id=p.property_id
 LEFT JOIN Payment pay ON b.booking_id=pay.booking_id;
+
+--Indexing
+CREATE INDEX idx_booking_id ON Booking(User);
+CREATE INDEX idx_booking_property_id ON Booking(property_id);
+CREATE INDEX idx_booking_id ON Booking(booking_id);
+CREATE INDEX idx_user_user_id ON User(user_id);
+CREATE INDEX idx_property_property_id ON Property(property_id);
+CREATE INDEX idx_payment_booking_id ON Payment(booking_id);
