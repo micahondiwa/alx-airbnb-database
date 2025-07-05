@@ -1,11 +1,11 @@
 SELECT * 
 FROM BOOKING 
-INNER JOIN USER| ON Booking.BookingID=User.UserID
+INNER JOIN USER ON Booking.BookingID=User.UserID
 
 
 SELECT * 
 FROM Property
-LEFT JOIN Review ON Property.PropertyID=Review.ReviewID
+LEFT JOIN Review ON Property.PropertyID
 
 
 SELECT *
