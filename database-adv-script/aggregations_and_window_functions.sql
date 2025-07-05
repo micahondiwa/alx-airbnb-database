@@ -11,7 +11,8 @@ SELECT
     Property_id AS property_id,
     Property.name AS property_name,
     COUNT(Booking_id) AS total_bookings,
-    ROW_NUMBER() OVER (ORDER BY COUNT(Booking_id) DESC) AS booking_rank
+    ROW_NUMBER() OVER (ORDER BY COUNT(Booking_id) DESC) AS row_number_rank
+    RANK() OVER (ORDER BY COUNT(Booking_id) DESC) AS booking_rank
 FROM 
     Property
 LEFT JOIN
