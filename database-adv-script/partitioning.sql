@@ -36,3 +36,8 @@ CREATE TABLE Booking_2023_Q4 PARTITION OF Booking
 INSERT INTO Booking
 SELECT * FROM Booking_old;
 
+
+EXPLAIN ANALYZE
+SELECT *
+FROM Booking
+WHERE start_date >= '2023-07-01' AND start_date < '2023-10-01';
