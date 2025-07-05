@@ -1,14 +1,20 @@
+
 SELECT 
-FROM Property
-WHERE id IN(
+    *
+FROM 
+    Property
+WHERE id 
+IN(
     SELECT Property_id
     FROM Review
     GROUP By Property_id
     HAVING AVG(rating) > 4.0
 );
 
-SELECT *
-FROM User u 
+SELECT 
+    *
+FROM 
+    User u 
 WHERE (
     SELECT COUNT(*)
     FROM Booking b 
