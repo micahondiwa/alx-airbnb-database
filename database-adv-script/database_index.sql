@@ -12,3 +12,12 @@ CREATE INDEX idx_booking_start_date on Booking(start_date)
 -- Index on Property Table
 CREATE INDEX idx_property_id on Property(property_id)
 CREATE INDEX idx_property_host_id on Property(host_id)
+
+EXPLAIN SELECT *
+FROM Booking
+WHERE user_id =123;
+
+
+ANALYZE SELECT *
+FROM Booking
+WHERE user_id =123;
