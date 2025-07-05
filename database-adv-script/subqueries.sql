@@ -1,3 +1,4 @@
+-- A query to find all properties where the averaging rating is greater than 4.0 
 
 SELECT 
     *
@@ -11,6 +12,7 @@ IN(
     HAVING AVG(rating) > 4.0
 );
 
+-- 
 SELECT 
     *
 FROM 
