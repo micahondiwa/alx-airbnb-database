@@ -1,5 +1,5 @@
 # Advanced Querying Power
-- Focuses on implemnting advanced SQL querying and optimization techniques to work with a simulated Airbnb database.
+Focuses on implemnting advanced SQL querying and optimization techniques to work with a simulated Airbnb database.
 **Key Highlights**
 - 1. **Defining Relationships with ER diagrams** - Creating an ER diagram, modeling relationships and dependencies between users, bookings, properties, and reviews in the Airbnb schema.
 - 2. **Complex Queries with Joins** - Combining multiple tables to extract meaningful insights. Explores INNER JOIN, LEFT JOIN, and FULL OUTER JOIN.
