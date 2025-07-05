@@ -37,4 +37,8 @@
 ```CREATE INDEX idx_property_location on Property(location)```
 
 3. **Query Performance before and after Indexing**
-
+```
+EXPLAIN SELECT *
+FROM Booking
+WHERE user_id =123;
+```
