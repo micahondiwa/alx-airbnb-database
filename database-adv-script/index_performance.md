@@ -35,3 +35,6 @@
 ```CREATE INDEX idx_property_host_id on Property(host_id)```
 
 ```CREATE INDEX idx_property_location on Property(location)```
+
+3. **Query Performance before and after Indexing**
+
