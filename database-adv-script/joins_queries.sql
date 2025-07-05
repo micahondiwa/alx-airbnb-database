@@ -1,7 +1,11 @@
 --A query using IINER JOIN to retrieve all bookings and the respective users who made those bookings
-SELECT Booking.*, User.*
-FROM Booking
-INNER JOIN Users ON Booking.User_id = Users.User_id;
+SELECT 
+    Booking.*, User.*
+FROM 
+    Booking
+INNER JOIN 
+    Users 
+ON Booking.User_id = Users.User_id;
 
 -- A query using LEFT JOIN to retrieve all properties  and their reviews , including properties  that have no reviews
 SELECT Property.*, Review.*
