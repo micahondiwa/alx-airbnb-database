@@ -21,3 +21,4 @@ GROUP BY
     property_id, property_name
 ORDER BY 
     booking_rank;
+    
