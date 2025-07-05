@@ -50,7 +50,7 @@ CREATE INDEX idx_user_user_id ON User(user_id);
 CREATE INDEX idx_property_property_id ON Property(property_id);
 CREATE INDEX idx_payment_booking_id ON Payment(booking_id);
 
-
+-- Re-factoring the query to reduce the execution time
 SELECT 
     b.booking_id,
     b.start_date,
@@ -68,7 +68,7 @@ SELECT
     pay.amount,
     pay.payment_date,
 
-EXPLAIN ANALYZE
+EXPLAIN
 FROM Booking b
 JOIN User u on b.user_id=user_id;
 JOIN Property p ON b.property_id=p.property_id;
