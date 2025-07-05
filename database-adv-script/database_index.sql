@@ -1,16 +1,18 @@
 
-EXPLAIN SELECT *
+EXPLAIN ANALYZE 
+SELECT *
 FROM Booking
 WHERE user_id =123;
 
-
-ANALYZE SELECT *
-FROM Booking
-WHERE user_id =123;
 
 -- Index on User Table
 CREATE INDEX idx_user_id ON User(user_id)
 CREATE INDEX idx_email ON User(email)
+
+EXPLAIN ANALYZE 
+SELECT *
+FROM Booking
+WHERE user_id =123;
 
 -- Indexes on Booking Table
 CREATE INDEX idx_booking_id on Booking(booking_id)
